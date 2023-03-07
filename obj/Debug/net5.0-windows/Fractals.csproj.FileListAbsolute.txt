@@ -1,0 +1,44 @@
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.exe
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.deps.json
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.runtimeconfig.json
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.runtimeconfig.dev.json
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.dll
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\ref\Fractals.dll
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.pdb
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.csproj.AssemblyReference.cache
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\MainWindow.g.cs
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\App.g.cs
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals_MarkupCompile.cache
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals_MarkupCompile.lref
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\MainWindow.baml
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.g.resources
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.AssemblyInfoInputs.cache
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.AssemblyInfo.cs
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.csproj.CoreCompileInputs.cache
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.dll
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\ref\Fractals.dll
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.pdb
+D:\Учебные материалы\#Универ\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.genruntimeconfig.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.exe
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.deps.json
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.runtimeconfig.json
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.runtimeconfig.dev.json
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.dll
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\bin\Debug\net5.0-windows\Fractals.pdb
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.csproj.AssemblyReference.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\MainWindow.g.cs
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\App.g.cs
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals_MarkupCompile.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals_MarkupCompile.lref
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\MainWindow.baml
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.g.resources
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.AssemblyInfoInputs.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.AssemblyInfo.cs
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.csproj.CoreCompileInputs.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.dll
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\refint\Fractals.dll
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.pdb
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\Fractals.genruntimeconfig.cache
+D:\Учебные материалы\#Универ\1-й курс\Прога\Peergrade\Задание 5. Фракталы\Fractals\obj\Debug\net5.0-windows\ref\Fractals.dll

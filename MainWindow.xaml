@@ -1,0 +1,282 @@
+﻿<Window x:Class="Fractals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fractals"
+        mc:Ignorable="d"
+        Title="Фракталы" Height="500" Width="800" Background="#FF3F3F46" FontFamily="Times New Roman">
+
+    <Window.Resources>
+
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Background" Value="LightSteelBlue"/>
+            <Setter Property="Foreground" Value="Snow"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="{x:Type Grid}">
+            <Setter Property="Background" Value="#FFE4E8F7"/>
+        </Style>
+
+        <Style TargetType="{x:Type Canvas}" x:Key="LightCanvas">
+            <Setter Property="Width" Value="800"/>
+            <Setter Property="Height" Value="500"/>
+            <Setter Property="ClipToBounds" Value="True"/>
+            
+            <Setter Property="Background" Value="LightSlateGray"/>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="200"/>
+            <Setter Property="Margin" Value="0,0,1,24"/>
+
+            <Setter Property="OpacityMask" Value="Black"/>
+        </Style>
+
+        <Style TargetType="{x:Type Slider}">
+            <Setter Property="Background" Value="Snow"/>
+            <Setter Property="Foreground" Value="#FF3F3F46"/>
+        </Style>
+
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="350"/>
+
+            <Setter Property="Background" Value="LightSteelBlue"/>
+            <Setter Property="Foreground" Value="Snow"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="70"/>
+
+            <Setter Property="Background" Value="Snow"/>
+            <Setter Property="Foreground" Value="#FF3F3F46"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Width" Value="350"/>
+
+            <Setter Property="Background" Value="LightSteelBlue"/>
+            <Setter Property="Foreground" Value="Snow"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Top">
+
+            <TabItem Header="Фрактальное дерево">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Viewbox Grid.Row="1" HorizontalAlignment="Left" MaxHeight="800">
+
+                        <Canvas Style ="{StaticResource LightCanvas}" Name ="CanvasTree"/>
+
+                    </Viewbox>
+
+                    <StackPanel Grid.Row="2">
+                        
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="Snow" Opacity="0.1"/>
+                        </StackPanel.Background>
+
+                        <Label Content="Отношение длин отрезков (целое число 1-10):"/>
+                        <TextBox TextChanged="BranchesLengthChanged">5</TextBox>
+
+                        <Label Content="Угол наклона первого отрезка (0-180 градусов):"/>
+                        <TextBox Name="LeftTextBox" TextChanged="AngleChanged">45</TextBox>
+
+                        <Label Content="Угол наклона второго отрезка (0-180 градусов):"/>
+                        <TextBox Name="RightTextBox" TextChanged="AngleChanged">45</TextBox>
+
+                        <Button Name="TreeSave" Content="Сохранить" Click="SaveCanvasClick"></Button>
+                        
+                    </StackPanel>
+
+                    <Slider Grid.Row="3" Name="DepthSliderTree" VerticalAlignment="Bottom" TickPlacement="BottomRight"
+                            Minimum="1" Maximum="10" IsSnapToTickEnabled="True" TickFrequency="1" 
+                            ValueChanged="TreeDepthChanged" HorizontalAlignment="Stretch">
+                    </Slider>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Кривая Коха">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Grid.Row="1" HorizontalAlignment="Left" MaxHeight="800">
+
+                        <Canvas Style ="{StaticResource LightCanvas}" Name ="CanvasCurve"/>
+
+                    </Viewbox>
+
+                    <StackPanel Grid.Row="2">
+                        
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="Snow" Opacity="0.1"/>
+                        </StackPanel.Background>
+
+                        <Button Name="CurveSave" Content="Сохранить" Click="SaveCanvasClick"></Button>
+
+                    </StackPanel>
+
+                    <Slider Grid.Row="3" Name="DepthSliderCurve" VerticalAlignment="Bottom" TickPlacement="BottomRight" 
+                            Minimum="1" Maximum="6" IsSnapToTickEnabled="True" TickFrequency="1"
+                            ValueChanged="CurveDepthChanged">
+                    </Slider>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Ковер Серпинского">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Grid.Row="1" HorizontalAlignment="Left" MaxHeight="800">
+
+                        <Canvas Style ="{StaticResource LightCanvas}" Name ="CanvasCarpet"/>
+
+                    </Viewbox>
+
+                    <StackPanel Grid.Row="2">
+                        
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="Snow" Opacity="0.1"/>
+                        </StackPanel.Background>
+
+                        <Button Name="CarpetSave" Content="Сохранить" Click="SaveCanvasClick"></Button>
+
+                    </StackPanel>
+
+                    <Slider Grid.Row="3" Name="DepthSliderCarpet" VerticalAlignment="Bottom" TickPlacement="BottomRight" 
+                            Minimum="1" Maximum="5" IsSnapToTickEnabled="True" TickFrequency="1" 
+                            ValueChanged="CarpetDepthChanged">
+                    </Slider>
+
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Треугольник Серпинского">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Grid.Row="1" HorizontalAlignment="Left" MaxHeight="800">
+
+                        <Canvas Style ="{StaticResource LightCanvas}" Name ="CanvasTriangle"/>
+
+                    </Viewbox>
+
+                    <StackPanel Grid.Row="2">
+                        
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="Snow" Opacity="0.1"/>
+                        </StackPanel.Background>
+
+                        <Button Name="TriangleSave" Content="Сохранить" Click="SaveCanvasClick"></Button>
+
+                    </StackPanel>
+
+                    <Slider Grid.Row="3" x:Name="DepthSliderTriangle" VerticalAlignment="Bottom" TickPlacement="BottomRight"
+                            Minimum="1" Maximum="8" IsSnapToTickEnabled="True" TickFrequency="1" 
+                            ValueChanged="TriangleDepthChanged">
+                    </Slider>
+
+                </Grid>
+
+
+            </TabItem>
+
+            <TabItem Header="Множество Кантора">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Grid.Row="1" HorizontalAlignment="Left" MaxHeight="800">
+
+                        <Canvas Style ="{StaticResource LightCanvas}" Name ="CanvasSet"/>
+
+                    </Viewbox>
+
+                    <StackPanel Grid.Row="2">
+                        
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="Snow" Opacity="0.1"/>
+                        </StackPanel.Background>
+
+                        <Label Content="Расстояние между отрезками (число 10-100):"/>
+                        <TextBox TextChanged="VerticalLengthChanged">50</TextBox>
+
+                        <Button Name="SetSave" Content="Сохранить" Click="SaveCanvasClick"></Button>
+
+                    </StackPanel>
+
+                    <Slider Grid.Row="3" Name="DepthSliderSet" VerticalAlignment="Bottom" TickPlacement="BottomRight"
+                            Minimum="1" Maximum="10" IsSnapToTickEnabled="True" TickFrequency="1" 
+                            ValueChanged="SetDepthChanged">
+                    </Slider>
+
+                </Grid>
+
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+
+</Window>
